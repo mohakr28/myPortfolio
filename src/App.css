@@ -77,7 +77,10 @@ textarea:focus,
 select:focus {
   outline: none;
 }
-
+.logo {
+  height: 50px;
+  width: max-content;
+}
 @media (min-width: 1700px) {
   main .container {
     max-width: 100%;
@@ -189,7 +192,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: #000;
 }
 .navbar-text button:hover::before {
   content: "";
@@ -547,7 +550,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: #721896;
   width: 0;
   height: 100%;
   position: absolute;
@@ -555,6 +558,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+  border-radius: 15px;
 }
 .contact form button:hover::before {
   width: 100%;

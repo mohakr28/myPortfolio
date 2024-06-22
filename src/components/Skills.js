@@ -6,7 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png";
-
+import PercentageCircle from "./PercentageCircle";
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -52,28 +52,58 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img
-                    src={meter1}
-                    alt="Image"
-                    style={{ filter: "hue-rotate(205deg)" }}
-                  />
+                  <PercentageCircle percentage={"80"} color={"#F97136"} />
+                  <h5>html</h5>
+                </div>
+                <div className="item">
+                  <PercentageCircle percentage={"70"} color={"#254bdd"} />
+                  <h5>css</h5>
+                </div>
+                <div className="item">
+                  <PercentageCircle percentage={"70"} color={"#efd81d"} />
+
+                  <h5>java script</h5>
+                </div>
+                <div className="item">
+                  <PercentageCircle percentage={"80"} color={"#087a9f"} />
+
+                  <h5>React js</h5>
+                </div>
+                <div className="item">
+                  <PercentageCircle percentage={"75"} color={"#7cd554"} />
+
                   <h5>Node js </h5>
                 </div>
                 <div className="item">
-                  <img
-                    src={meter2}
-                    alt="Image"
-                    style={{ filter: "grayscale(1)" }}
-                  />
+                  <PercentageCircle percentage={"65"} color={"#087a9f"} />
+
                   <h5>Next js</h5>
                 </div>
+
                 <div className="item">
-                  <img
-                    src={meter3}
-                    alt="Image"
-                    style={{ filter: "hue-rotate(305deg)" }}
-                  />
-                  <h5>React js</h5>
+                  <PercentageCircle percentage={"65"} color={"#7377ad"} />
+
+                  <h5>php</h5>
+                </div>
+                <div className="item">
+                  <PercentageCircle percentage={"65"} color={"#f72c1f"} />
+
+                  <h5>laravel</h5>
+                </div>
+                <div className="item">
+                  <PercentageCircle percentage={"65"} color={"#dddddd"} />
+
+                  <h5>wordpress</h5>
+                </div>
+                <div className="item">
+                  <PercentageCircle percentage={"65"} color={"#dd8800"} />
+
+                  <h5>mysql</h5>
+                </div>
+                <div className="item">
+                  <PercentageCircle percentage={"65"} color={"#03e461"} />
+
+                  <h5>mongo db</h5>
                 </div>
               </Carousel>
             </div>

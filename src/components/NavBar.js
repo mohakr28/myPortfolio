@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/logo2.png";
+import logo from "../assets/img/logo5.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
@@ -28,13 +28,12 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
-
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -70,24 +69,16 @@ export const NavBar = () => {
               >
                 Projects
               </Nav.Link>
-              <Nav.Link
-                href="#connect"
-                className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("project")}
-              >
-                Projects
-              </Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/akrem-addar-99a352285/">
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="#">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100084550134823"
+                  target="blank"
+                >
                   <img src={navIcon2} alt="" />
                 </a>
                 <a href="#">

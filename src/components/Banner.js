@@ -90,7 +90,7 @@ export const Banner = () => {
                       What can i do <ArrowRightCircle size={25} />
                     </button>
                   </a>
-                </div>  
+                </div>
               )}
             </TrackVisibility>
           </Col>
